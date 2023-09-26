@@ -1,0 +1,64 @@
+https://www.postgresqltutorial.com/postgresql-getting-started/
+
+Goal: Recreate Amazon Day 1 Data Model
+
+products{
+pid (unique) serial PK
+pname varchar reqd
+price float constraint must be positive reqd
+imageLink varchar(32) reqd
+}
+
+CREATE TABLE products (
+	pid serial PRIMARY KEY,
+	pname VARCHAR ( 10 ) NOT NULL,
+	price NUMERIC(5,2) CHECK (price >= 0) NOT NULL,
+        imageLink VARCHAR ( 32 ) NOT NULL
+);
+
+There should be a space between \! and cls.
+\! cls
+
+INSERT INTO products (pname, price, imageLink) VALUES('Concepts', 200.00, 'https://amazon.in/cover1.png');
+INSERT INTO products (pname, price, imageLink) VALUES('ddia', 250.00, 'https://amazon.in/cover2.png');
+
+users{
+uid (unique) serial PK
+email (unique) varchar reqd
+password varchar reqd
+type bool (Prime = 1/Regular = 0 [default]) reqd
+fname varchar reqd
+lname varchar reqd
+mobile int(13) reqd
+address varchar reqd
+signuptime TIMESTAMP
+dob DATE
+active bool 0/1
+}
+
+orders{
+oid serial PK reqd
+pid int FK(products) reqd
+uid int FK(users) reqd
+deliveryType bool (cod = 1/prepaid = 0 [default]) reqd
+tsop TIMESTAMP reqd
+status (ordered = 0/shipped = 1/delivered = 2) SMALLINT reqd
+trackingNo varchar 
+}
+
+
+
+products[pid] users[uid] orders[oid, uid, pid]
+
+
+
+
+
+
+
+
+
+
+
+
+

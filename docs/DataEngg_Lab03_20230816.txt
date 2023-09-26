@@ -1,0 +1,75 @@
+DEPT{did(PK), dname(reqd.), dhod}
+LOC{lid(PK), did(FK), lname(reqd.)}
+
+DEPT
+1, admin, RS
+2, hostels, SP
+
+LOC
+1, 1, east
+2, 1, west
+3, 2, V
+4, 2, I
+...  
+
+1NF
+Fomral: A relation should not contain another relation.
+WTM: A relation should not have multivalued attributes.
+
+2NF
+Formal: A non-prime attribute should not be 
+partially functionally dependent on a key.
+WTM: A non-prime attribute should not be 
+dependent on K - {a} where a is a part of the key.
+
+X -> Y
+X functionally determines Y.
+Y is functionally dependent on X.
+WTM:
+(T1[x1] = T2[x2]) => (T1[y1] = T2[y2]).
+
+
+(T1[x1] != T2[x2]) !=> (T1[y1] != T2[y2]).
+
+
+3NF
+Formal: A non-prime attribute should not be 
+transitively dependent on the key.
+WTM: A non-prime attribute should not be dependent
+on another non-prime attribute.
+
+BCNF
+A non-prime attribute can only be dependent on a superkey.
+
+Edgar Codd
+Ray Boyce
+
+
+DC{SID(PK), PID(PK), MID}
+
+S01, P01, RS
+S01, P02, RS
+S01, P03, SP
+S02, P04, SP
+S02, P05, SP
+S02, P06, RS 
+S03, P01, RS
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
