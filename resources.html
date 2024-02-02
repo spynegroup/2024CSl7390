@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<title>CSL4030</title>
+		<title>CSL7390</title>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
     	<link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
 		<link href = "css/bootstrap.min.css" rel = "stylesheet">
@@ -16,8 +16,8 @@
 ""
 		<div class = "container">
 			<div class="row">
-				<h3 class = "text-center">CSL4030: Data Engineering</h3>
-				<h4 class = "text-center">Jul-Dec, 2023</h4>
+				<h3 class = "text-center">CSL7390: Social Network Analysis</h3>
+				<h4 class = "text-center">Jan-May, 2024</h4>
 				<img class="img-thumbnail center-block" src="images/iitj_logo_small.jpg" width=120px height=120px />
 				</br>
 				
@@ -101,29 +101,19 @@
 			<p>
 			<ul>
 				<li class="text-justify"><a href="#lectures">Lectures</a></li>
-				<li class="text-justify"><a href="#labs">Labs</a></li>
-				<!-- <li class="text-justify"><a href="docs/Project groups_ Presentation schedule - Assignment 1.pdf" target="_blank">Mid-Term Presentation Schedule</a></li>-->
-				<!-- <li class="text-justify"><a href="docs/2017-CS565-Final-Presentation-Schedule - Sheet2.pdf" target="_blank">Final Presentation Schedule</a></li>-->
 				<li class="text-justify"><a href="#text_and_reference_books">Text and Reference Book(s)</a></li>
-				<!-- <li class="text-justify"><a href="#nlp_tools">NLP Tools</a></li> -->
-				<!-- <li class="text-justify"><a href="#related_blogs">Related Blogs</a></li> -->
-				<!-- <li class="text-justify"><a href="#tut_nlp_python">Tutorials: NLP + Python</a></li> -->
-<!-- 					<ul>
-						<li class="text-justify">Tuesday 5 - 6:25 PM</li>
-						<li class="text-justify">Wednesday 4 - 4:55 PM</li>
-						<li class="text-justify">Thursday 3 - 3:55 PM</li>
-						<li class="text-justify">Friday 2 - 2:55 PM</li>
-					</ul> -->
 				<li class="text-justify"><a href="#similar_courses">Similar Courses</a></li>
-				<li class="text-justify"><a href="#DE_conf">Data Engineering Conferences</a></li>
-				<li class="text-justify"><a href="#DE_podcasts">Data Engineering Podcasts</a></li>
+				<li class="text-justify"><a href="#conferences">Conferences</a></li>
+				<li class="text-justify"><a href="#podcasts">Podcasts</a></li>
 			</ul></p>
 			</div>
 
 			<!-- Syllabus and References -->
 			<div class = "row col-xs-10 col-xs-offset-1">
 			<h4 id="lectures"><u>Lectures</u></h4>
-			<!-- Mon-Wed lecture slides are uploaded on Thursday mornings. -->
+			<b>Caution:</b> We are having discussion primarily on the blackboard.<br/>
+			Hence, the slides are only for the purpose of supporting the blackboard discussions.<br/>
+			In the exams, questions will come from all of the classroom discussions, not only from the slides.
 			<p>
 <!-- <div class="bs-example"> -->
     <table class="table table-hover">
@@ -141,156 +131,27 @@
         <tbody>
             <tr>
                 <td>Lecture 1</td>
-                <td>Jul 31</td>
-                <td>Who are Data Engineers?</td>
-				<td>[ <a href="docs/DataEngg_SaptarshiPyne_Lec01_20230731.pdf" target="_blank">Slides</a> ]</td>				
+                <td>Jan 5</td>
+                <td>Introduction and Different Types of Network</td>
+				<td>[ <a href="docs/SocialNetAnalysis_SaptarshiPyne_Lec01_20240105.pdf" target="_blank">Slides</a> ]</td>				
             </tr>
 			<tr>
-                <td>Lectures 2 and 3</td>
-                <td>Aug 4,7</td>
-                <td>What is Big Data?</td>
-				<td>[ <a href="docs/DataEngg_SaptarshiPyne_Lec02_Lec03_20230804_20230807.pdf" target="_blank">Slides</a> ]</td>				
+                <td>Lecture 2</td>
+                <td>Jan 8</td>
+                <td>Graph Introduction</td>
+				<td>[ <a href="docs/SocialNetAnalysis_SaptarshiPyne_Lec02_20240108.pdf" target="_blank">Slides</a> ]</td>				
             </tr>
 			<tr>
-                <td>Lecture 4</td>
-                <td>Aug 9</td>
-                <td>What is a Data Model?</td>
-				<td>[ <a href="docs/DataEngg_SaptarshiPyne_Lec04_20230809.pdf" target="_blank">Slides</a> ]</td>				
+                <td>Lectures 3-8</td>
+                <td>Jan 10-24</td>
+                <td>Network Measures</td>
+				<td>[ <a href="docs/SocialNetAnalysis_SaptarshiPyne_Lec03_08_20240110_20240124.pdf" target="_blank">Slides</a> ]</td>				
             </tr>
 			<tr>
-                <td>Lecture 5</td>
-                <td>Aug 11</td>
-                <td>A Brief History of Data Models Part I</td>
-				<td>[ Chap 2, Kleppmann ]</td>				
-            </tr>
-			<tr>
-                <td>Lecture 6</td>
-                <td>Aug 14</td>
-                <td>A Brief History of Data Models Part II</td>
-				<td>[ Chap 2, Kleppmann ]</td>				
-            </tr>
-			<tr>
-                <td>Lecture 7</td>
-                <td>Aug 16</td>
-                <td>An Introduction to the Relational Data Model</td>
-				<td>[ <a href="docs/DataEngg_SaptarshiPyne_Lec07_20230816.pdf" target="_blank">Slides</a> ]</td>				
-            </tr>
-			<tr>
-                <td>Lecture 8</td>
-                <td>Aug 18</td>
-                <td>Normalization and Denormalization of Relations</td>
-				<td>[ <a href="docs/DataEngg_SaptarshiPyne_Lec08_20230818.pdf" target="_blank">Slides</a> ]</td>				
-            </tr>
-			<tr>
-                <td>Lecture 9</td>
-                <td>Aug 21</td>
-                <td>#NoSQL: The Document Data Model</td>
-				<td>[ <a href="docs/DataEngg_SaptarshiPyne_Lec09_20230821.pdf" target="_blank">Slides</a> ]</td>				
-            </tr>
-			<tr>
-                <td>Lecture 10</td>
-                <td>Aug 23</td>
-                <td>#NoSQL: The Graph-like Data Model</td>
-				<td>[ <a href="docs/DataEngg_SaptarshiPyne_Lec10_20230823.pdf" target="_blank">Slides</a> ]</td>				
-            </tr>
-			<tr>
-                <td>Lectures 11, 12</td>
-                <td>Aug 25, 28</td>
-                <td>Distributed Data Storage and Management Parts I, II: Introduction</td>
-				<td>[ <a href="docs/DataEngg_SaptarshiPyne_Lec11_Lec12_20230825_20230828.pdf" target="_blank">Slides</a> ]</td>
-            </tr>
-			<tr>
-                <td>Lecture 13</td>
-                <td>Aug 30</td>
-                <td>Distributed Data Storage and Management Part III: Global Transactions</td>
-				<td>[ <a href="docs/DataEngg_SaptarshiPyne_Lec13_20230830.pdf" target="_blank">Slides</a> ]</td>
-            </tr>
-			<tr>
-                <td>Lecture 14</td>
-                <td>Sep 1</td>
-                <td>Distributed Data Storage and Management Part IV: Commit Protocols</td>
-				<td>[ <a href="docs/DataEngg_SaptarshiPyne_Lec14_20230901.pdf" target="_blank">Slides</a> ]</td>
-            </tr>
-			<tr>
-                <td>Minor-1</td>
-                <td>Sep 6</td>
-                <td><b>Minor-1 Exam</b></td>
-				<td>[ <a href="docs/minor1_qnPaper_20230906.pdf" target="_blank">Question Paper</a>,<br> 
-						<a href="docs/minor1_ans_outlines.pdf" target="_blank">Answer Outlines</a>,<br>
-						<a href="docs/DataEngg_feedback_frac1_20230915.pdf" target="_blank">Feedback</a>]</td>
-            </tr>
-			<tr>
-                <td>Lecture 15</td>
-                <td>Sep 11</td>
-                <td>Distributed Data Storage and Management Part V: Persistent Messaging</td>
-				<td>[ <a href="docs/DataEngg_SaptarshiPyne_Lec15_20230911.pdf" target="_blank">Slides</a> ]</td>
-            </tr>
-			<tr>
-                <td>Expert's Talk</td>
-                <td>Sep 12</td>
-                <td>'Vitess Demystified: Navigating the World of Distributed Databases' by Manan Gupta from PlanetScale</td>
-				<td>[ <a href="https://www.youtube.com/watch?v=JBiyg176xws" target="_blank">Video</a>, <a href="docs/Vitess_Demystified_MananGupta_20230912.pdf" target="_blank">Slides</a> ]</td>
-            </tr>
-			<tr>
-                <td>Lectures 16, 17, 18</td>
-                <td>Sep 13, 15, 18</td>
-                <td>Distributed Data Storage and Management Part VI: Concurrency Control</td>
-				<td>[ <a href="docs/DataEngg_SaptarshiPyne_Lec16_17_18_20230913_20230915_20230918.pdf" target="_blank">Slides</a> ]</td>
-            </tr>
-			<tr>
-                <td>Lectures 19, 20, 21</td>
-                <td>Sep 20, 22, 27</td>
-                <td>Distributed Data Storage and Management Part VII: Ensuring Availability</td>
-				<td>[ <a href="docs/DataEngg_SaptarshiPyne_Lec19_20_21_20230920_20230922_20230927.pdf" target="_blank">Slides</a> ]</td>
-            </tr>
-			<tr>
-                <td>Lectures 22, 23</td>
-                <td>Sep 29, Oct 4</td>
-                <td>Distributed Data Storage and Management Part VIII: Heterogeneous Distributed Databases</td>
-				<td>[ <a href="docs/DataEngg_SaptarshiPyne_Lec22_23_20230929_20231004.pdf" target="_blank">Slides</a> ]</td>
-            </tr>
-			<tr>
-                <td>Lecture 24</td>
-                <td>Oct 6</td>
-                <td>Distributed Data Storage and Management Part IX: Directory Access Protocols</td>
-				<td>[ <a href="docs/DataEngg_SaptarshiPyne_Lec24_20231006.pdf" target="_blank">Slides</a> ]</td>
-            </tr>
-			<tr>
-                <td>Lectures 25, 26</td>
-                <td>Oct 9, 11</td>
-                <td>Hashing and Indexing</td>
-				<td>[ <a href="docs/DataEngg_SaptarshiPyne_Lec25_26_20231009_20231011.pdf" target="_blank">Slides</a> ]</td>
-            </tr>
-			<tr>
-                <td>Minor-2</td>
-                <td>Oct 16</td>
-                <td><b>Minor-2 Exam</b></td>
-				<td>[ <a href="docs/minor2_qnPaper_20231016.pdf" target="_blank">Question Paper</a>,<br> 
-						<a href="docs/minor2_ans_outlines.pdf" target="_blank">Answer Outlines</a>]</td>
-            </tr>
-			<tr>
-                <td>Lectures 27, 28, 29</td>
-                <td>Oct 13, 20, 26 </td>
-                <td>Data Warehousing (OLTP, OLAP)</td>
-				<td>[ <a href="docs/DataEngg_SaptarshiPyne_Lec27_28_29_20231013_20231020_20231026.pdf" target="_blank">Slides</a> ]</td>
-            </tr>
-			<tr>
-                <td>Lecture 30</td>
-                <td>Oct 27 </td>
-                <td>Distributed Query Processing</td>
-				<td>[ <a href="docs/DataEngg_SaptarshiPyne_Lec30_20231027.pdf" target="_blank">Slides</a> ]</td>
-            </tr>
-			<tr>
-                <td>Lectures 31-35</td>
-                <td>Oct 30, Nov 1, 6, 8, 10</td>
-                <td>Query Optimization</td>
-				<td>[ <a href="docs/DataEngg_SaptarshiPyne_Lecs31_to_35_20231030_to_20231110.pdf" target="_blank">Slides</a> ]</td>
-            </tr>
-			<tr>
-                <td>Lectures 36-41</td>
-                <td>Nov 15, 17, 20, 22, 24, 26</td>
-                <td>Streaming Data Analytics</td>
-				<td>[ <a href="docs/DataEngg_SaptarshiPyne_Lecs36_to_41_20231115_to_20231126.pdf" target="_blank">Slides</a> ]</td>
+                <td>Lectures 9-</td>
+                <td>Jan 29-</td>
+                <td>Social Groups</td>
+				<td>[ Slides will be uploaded when the topic is over ]</td>				
             </tr>
             <tr  class="active">
                 <td> </td>
@@ -322,99 +183,14 @@
 			</p>
 			</div> -->
 
-			
-			<!-- Assignments -->
-						<!-- Syllabus and References -->
-			<div class = "row col-xs-10 col-xs-offset-1">
-				<h4 id="labs"><u>Labs</u></h4>
-				<!-- Mon-Wed lecture slides are uploaded on Thursday mornings. -->
-				<p>
-					<!-- <div class="bs-example"> -->
-						<table class="table table-hover">
-						<!-- <caption>Updates after each lecture.</caption> -->
-						<!-- Download required icons from https://fortawesome.github.io/Font-Awesome/icons/ -->
-						<!-- Use different color codes for different type of events using tr class -->
-							<thead>
-								<tr class="active">
-									<th>Event</th>
-									<th>Date</th>
-									<th>Description</th>
-									<th>References</th>
-								</tr>
-							</thead>
-							<tbody>
-								<tr>
-									<td>Lab 1</td>
-									<td>Aug 4</td>
-									<td>Data Collection Techniques</td>
-									<td>[ <a href="docs/DataEngg_Lab01_20230804.pdf" target="_blank">Slides</a> ]</td>				
-								</tr>
-								<tr>
-									<td>Lab 2 </td>
-									<td>Aug 9</td>
-									<td>SQL queries with PostgreSQL</td>
-									<td>[ <a href="docs/DataEngg_Lab02_20230809.txt" target="_blank">Material</a> ]</td>				
-								</tr>
-								<tr>
-									<td>Lab 3</td>
-									<td>Aug 16</td>
-									<td>ERWin Data Modeler, Database Normalization</td>
-									<td>[ <a href="docs/DataEngg_Lab03_20230816.txt" target="_blank">Material</a>, <a href="docs/navathe_ch1_labManual.txt" target="_blank">ERWin Manual</a> ]</td>				
-								</tr>
-								<tr>
-									<td>Lab 4</td>
-									<td>Aug 23</td>
-									<td>SQL Joins</td>
-									<td>[ <a href="Lab_Slides/Joins_Lab_4.pptx" target="_blank">Slides</a> ]</td>				
-								</tr>
-								<tr>
-									<td>Lab 5</td>
-									<td>Aug 30</td>
-									<td>Database Transactions</td>
-									<td>[ <a href="Lab_Slides/Transactions_SQL.pptx" target="_blank">Slides</a> ]</td>				
-								</tr>
-								<tr>
-									<td>Lab 6</td>
-									<td>Sep 13</td>
-									<td>Document-oriented database management with MongoDB</td>
-									<td>[ <a href="Lab_Slides/Transactions_SQL.pptx" target="_blank">Slides</a> ]</td>				
-								</tr>
-								<tr>
-									<td>Lab 7</td>
-									<td>Sep 27</td>
-									<td>Data encoding with XML</td>
-									<td>[ <a href="Lab_Slides/XML.pptx" target="_blank">Slides</a> ]</td>				
-								</tr>
-								<tr  class="active">
-									<td>Lab 8</td>
-									<td>Oct 4</td>
-									<td>JSON</td>
-									<td>[ <a href="Lab_Slides/JSON.pdf" target="_blank">Slides</a> ]</td>
-								</tr>	
-								<tr  class="active">
-									<td>Lab 9</td>
-									<td>Oct 11</td>
-									<td>LDAP</td>
-									<td>[ <a href="Lab_Slides/LDAP.pptx" target="_blank">Slides</a> ]</td>
-								</tr>			
-							</tbody>
-						</table>
-					</div>
-			<!-- End Assignments -->
-			
-
-
 
 			<!-- Text and Reference Book(s) -->
 			<div class = "row col-xs-10 col-xs-offset-1">
 			<h4 id="text_and_reference_books"><u>Text and Reference Book(s)</u></h4>
 			<p>
 				<Ol>
-					<li class="text-justify"><b>Kleppmann</b>: M. KLEPPMANN (2017), <b><i>Designing Data-Intensive Applications</i></b>, O’Reilly.</li> 
-					<li class="text-justify"><b>Korth</b>: A. SILBERSCHATZ, H.F. KORTH, S. SUDARSHAN (2011), <b><i>Database System Concepts</i></b>, McGraw Hill Publications, 6th Edition.</li>
-					<li class="text-justify"><b>Navathe</b>: R. ELMASRI, S.B. NAVATHE (2017), <b><i>Fundamentals of Database Systems</i></b>, Pearson Education, 7th Edition.</li>
-					<li class="text-justify"><b>Raj &amp; Raman</b>: P. RAJ, A. RAMAN, D. NAGARAJ, S. DUGGIRALA (2015), <b><i>High-Performance Big-Data Analytics:</i></b> Computing Systems and Approaches, Springer, 1st Edition.</li>
-					<li class="text-justify"><b>Reis &amp; Housley</b>: J. Reis, M. Housley (2022), <b><i>Fundamentals of Data Engineering</i></b>, O'Reilly Media, Inc.,ISBN: 9781098108304.</li>
+					<li class="text-justify"><b>Newman</b>: Mark Newman (2010), <b><i>Networks: An Introduction</i></b>, Oxford University Press.</li> 
+					<li class="text-justify"><b>Kleinberg</b>: David Easley and Jon Kleinberg (2010), <b><i>Networks, Crowds, and Markets: Reasoning About a Highly Connected World</i></b>, Cambridge University Press. Pre-publication <a href="https://www.cs.cornell.edu/home/kleinber/networks-book/networks-book.pdf" target="_blank">draft</a>. Book <a href="https://www.cs.cornell.edu/home/kleinber/networks-book/" target="_blank">website</a>. </li>
 				</Ol>
 			</p>
 			</div>
@@ -426,36 +202,35 @@
 			<h4 id="similar_courses"><u>Similar Courses</u></h4>
 			<p>
 				<ul>
-					<li class="text-justify"><a href="https://www.coursera.org/professional-certificates/ibm-data-engineer#courses" target="_blank">IBM Data Engineering Professional Certificate</a></li>
-					<li class="text-justify"><a href="https://learn.microsoft.com/en-us/training/career-paths/data-engineer" target="_blank">Microsoft Data Engineering Certificates</a></li>
-					<li class="text-justify"><a href="https://www.coursera.org/learn/process-data?specialization=google-data-analytics" target="_blank">Google: Process Data from Dirty to Clean</a></li>
-					<li class="text-justify"><a href="https://www.coursera.org/learn/cloud-data-engineering-duke#modules" target="_blank">Duke University: Cloud Data Engineering</a></li>
+					<li class="text-justify"><a href="https://nptel.ac.in/courses/106106169" target="_blank">Social Networks</a> by IIT Ropar</li>
+					<li class="text-justify"><a href="https://www.coursera.org/learn/social-network-analysis" target="_blank">Social Network Analysis</a> by University of California Davis (UC Davis)</li>
+					<li class="text-justify"><a href="https://www.coursera.org/learn/python-social-network-analysis" target="_blank">Applied Social Network Analysis in Python</a> by University of Michigan</li>
 				</ul>
 			</p>
 			</div>
 
 			<!-- Data Engineering Conferences -->
 			<div class = "row col-xs-10 col-xs-offset-1">
-			<h4 id="DE_conf"><u>Data Engineering Conferences</u></h4>
-			<p>
-				<ul>
+			<h4 id="conf"><u>Conferences</u></h4>
+			<p> Coming soon...
+				<!--<ul>
 					<li class="text-justify"><a href="https://reinvent.awsevents.com/" target="_blank">AWS re:Invent</a> (largest annual meeting of Amazon Web Services)</li>
 					<li class="text-justify"><a href="https://cloud.withgoogle.com/next" target="_blank">Google Cloud Next</a></li>
 					<li class="text-justify"><a href="https://bigdataconference.eu/" target="_blank">Big Data Conference Europe</a></li>
 					<li class="text-justify"><a href="https://odsc.com/" target="_blank">Open Data Science Conference (ODSC)</a> (organizes multiple conferences every year at different venues)</li>
 					<li class="text-justify"><a href="https://waset.org/software-and-data-engineering-conference-in-april-2024-in-venice" target="_blank">International Conference on Software and Data Engineering (ICSDE)</a></li>
-				</ul>
+				</ul>-->
 			</p>
 			</div>
 			
 			<!-- Data Engineering Podcasts -->
 			<div class = "row col-xs-10 col-xs-offset-1">
-			<h4 id="DE_podcasts"><u>Data Engineering Podcasts</u></h4>
-			<p>
-				<ul>
+			<h4 id="podcasts"><u>Podcasts</u></h4>
+			<p> Coming soon...
+				<!--<ul>
 					<li class="text-justify"><a href="https://www.youtube.com/@thedataengineeringshow-pod7110" target="_blank">The Data Engineering Show - Podcast</a></li>
 					<li class="text-justify"><a href="https://www.youtube.com/playlist?list=PLIlqnK97FLdtQEad5pi22BefNuaSeBt1e" target="_blank">Monday Morning Data Chat</a></li>
-				</ul>
+				</ul>-->
 			</p>
 			</div>
 
